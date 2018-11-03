@@ -17,7 +17,7 @@ Procedure OpenWindow_0(x = 0, y = 0, width = 310, height = 90)
     buttonPush = ButtonGadget(#PB_Any, 200, 50, 100, 25, "ПУСК")
     Button_1 = ButtonGadget(#PB_Any, 270, 10, 30, 25, "+")
     GadgetToolTip(Button_1, "Выбрать путь до файлов")
-    textCopyright = TextGadget(#PB_Any, 10, 70, 75, 15, "version: 0.0.0.1")
+    textCopyright = TextGadget(#PB_Any, 10, 70, 78, 15, "Версия: 0.0.0.1")
     SetGadgetColor(textCopyright, #PB_Gadget_FrontColor,RGB(0,128,0))
 EndProcedure
 
@@ -63,9 +63,6 @@ Procedure Window_0_Events(event)
 
                     If countFiles <> 0 ; Если что-то есть то продолжаем
                         If CreateFile(#fileCr, createPack$, #PB_UTF8)
-                            DeleteElement(Files$(), countFiles)
-                            countFiles = ListSize(Files$()) ; пересчитаем кол-во файлов.
-                            
                             WriteStringN(#fileCr, "/* Кол-во файлов: " + Str(countFiles) + " */")
                             ForEach Files$()
                                 WriteStringN(#fileCr, Files$() + ";" + FileFingerprint(pathFind$ + "\" + Files$(), #PB_Cipher_MD5))
@@ -90,7 +87,7 @@ Procedure Window_0_Events(event)
   ProcedureReturn #True
 EndProcedure
 ; IDE Options = PureBasic 5.60 (Windows - x86)
-; CursorPosition = 57
+; CursorPosition = 54
 ; FirstLine = 43
 ; Folding = -
 ; EnableXP

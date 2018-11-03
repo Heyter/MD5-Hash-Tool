@@ -7,7 +7,7 @@
   <section name="data">
     <explorer view="..\" pattern="0"/>
     <log show="1"/>
-    <lastopen date="2018-11-04 01:53" user="Владелец" host="ВЛАДЕЛЕЦ-ПК"/>
+    <lastopen date="2018-11-04 02:23" user="Владелец" host="ВЛАДЕЛЕЦ-ПК"/>
   </section>
   <section name="files">
     <file name="Checksum_tool.pb">
@@ -16,18 +16,31 @@
     </file>
     <file name="functions.pb">
       <config load="0" scan="1" panel="1" warn="1" lastopen="0" panelstate="+"/>
-      <fingerprint md5="5203c97911eaf6d5f52e10ae3e6d2cf9"/>
+      <fingerprint md5="15c795e008d7240c43f22cbcb9336f45"/>
     </file>
     <file name="UI.pbi">
       <config load="0" scan="1" panel="1" warn="1" lastopen="0" panelstate="+"/>
-      <fingerprint md5="491ab7bbe0ec9c3dc07fe14d99732707"/>
+      <fingerprint md5="118c4ff7d018a49d64372683cb0027ba"/>
     </file>
   </section>
   <section name="targets">
     <target name="Целевой по умолчанию" enabled="1" default="1">
-      <inputfile value=""/>
-      <outputfile value=""/>
-      <options xpskin="1" debug="1"/>
+      <inputfile value="Checksum_tool.pb"/>
+      <outputfile value="MD5 Hash Tool.exe"/>
+      <executable value="MD5 Hash Tool.exe"/>
+      <options thread="1" xpskin="1"/>
+      <icon enable="1">icons\icon256.ico</icon>
+      <versioninfo enable="1">
+        <field0 value="0.0.0.1"/>
+        <field1 value="0.0.0.1"/>
+        <field2 value="Hikka.exe"/>
+        <field3 value="MD5 Hash Tool"/>
+        <field4 value="0.0.0.1"/>
+        <field5 value="0.0.0.1"/>
+        <field6 value="MD5 Hash Tool"/>
+        <field7 value="MD5 Hash Tool"/>
+        <field8 value="MD5 Hash Tool"/>
+      </versioninfo>
     </target>
   </section>
 </project>
