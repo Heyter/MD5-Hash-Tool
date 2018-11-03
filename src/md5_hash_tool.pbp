@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project xmlns="http://www.purebasic.com/namespace" version="1.0" creator="PureBasic 5.60 (Windows - x86)">
+  <section name="config">
+    <options closefiles="1" openmode="0" name="MD5 Hash Tool"/>
+  </section>
+  <section name="data">
+    <explorer view="..\" pattern="0"/>
+    <log show="1"/>
+    <lastopen date="2018-11-04 01:53" user="Владелец" host="ВЛАДЕЛЕЦ-ПК"/>
+  </section>
+  <section name="files">
+    <file name="Checksum_tool.pb">
+      <config load="0" scan="1" panel="1" warn="1" lastopen="0" panelstate="+"/>
+      <fingerprint md5="17928f1395ac2b37f4472130d719846c"/>
+    </file>
+    <file name="functions.pb">
+      <config load="0" scan="1" panel="1" warn="1" lastopen="0" panelstate="+"/>
+      <fingerprint md5="5203c97911eaf6d5f52e10ae3e6d2cf9"/>
+    </file>
+    <file name="UI.pbi">
+      <config load="0" scan="1" panel="1" warn="1" lastopen="0" panelstate="+"/>
+      <fingerprint md5="491ab7bbe0ec9c3dc07fe14d99732707"/>
+    </file>
+  </section>
+  <section name="targets">
+    <target name="Целевой по умолчанию" enabled="1" default="1">
+      <inputfile value=""/>
+      <outputfile value=""/>
+      <options xpskin="1" debug="1"/>
+    </target>
+  </section>
+</project>
